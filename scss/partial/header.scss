@@ -1,0 +1,48 @@
+header {
+  background: $color-white;
+  padding: 45px 100px;
+  width: 100%;
+  .navigation {
+    width: 100%;
+    .icon-menu {
+      font-size: $font-size-h1;
+      color: $color-black;
+      cursor: pointer;
+      //display: none;
+    }
+    .navBar {
+      width: 100%;
+      li {
+        &:nth-last-child(1n+1) {
+          margin-left: 40px;
+        }
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $color-black;
+          transition: 0.5s;
+          &:hover {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .sideBar {
+    border-left: 1px solid $color-black;
+    transition: 0.5s ease-in-out;
+    transform: translate(-100%);
+    background: $color-gray2;
+    color: $color-black;
+    position: absolute;
+    display: none;
+    height: 100vh;
+    z-index: 1000;
+    width: 280px;
+    left: 0;
+    top: 0;
+    &.active {
+      transform: translate(0);
+    }
+  }
+}

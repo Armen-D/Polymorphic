@@ -1,0 +1,93 @@
+.gird-area {
+  background: $color-gray4;
+  padding: 100px;
+  .masonryGrid {
+    figure {
+      box-sizing: border-box;
+      margin: 15px;
+      width: 371px;
+      img {
+        width: 370px;
+      }
+      button {
+        position: absolute;
+        left: 10px;
+        top: -60px;
+      }
+      figcaption {
+        background: $color-white;
+        position: relative;
+        padding: 25px;
+        width: 100%;
+        h2 {
+          font-family: 'Playfair Display SC', serif;
+          font-size: $font-size-h2;
+          color: $color-black2;
+          margin-bottom: 20px;
+          font-weight: bold;
+        }
+        span {
+          text-transform: uppercase;
+          font-size: $font-size-h5;
+          font-weight: bold;
+        }
+        p {
+          font-size: $font-size-h3;
+          color: $color-gray2;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .gridStart {
+    figure:nth-child(1) {
+      img {
+        height: 240px;
+      }
+    }
+    figure:nth-child(2) {
+      img {
+        height: 240px;
+      }
+    }
+    figure:nth-child(3) {
+      img {
+        height: 370px;
+      }
+    }
+  }
+  .gridCenter {
+    figure:nth-child(1) {
+      img {
+        height: 370px;
+      }
+    }
+    figure:nth-child(2) {
+      img {
+        height: 240px;
+      }
+    }
+    figure:nth-child(3) {
+      img {
+        height: 240px;
+      }
+    }
+  }
+  .gridEnd {
+    figure:nth-child(1) {
+      img {
+        height: 240px;
+      }
+    }
+    figure:nth-child(2) {
+      img {
+        height: 240px;
+      }
+    }
+    figure:nth-child(3) {
+      img {
+        height: 370px;
+      }
+    }
+  }
+}
