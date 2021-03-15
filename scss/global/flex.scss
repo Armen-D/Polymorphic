@@ -1,0 +1,59 @@
+.d-flex {
+  @include d-flex;
+}
+
+.justify-left {
+  @include justify-left;
+}
+
+.justify-center {
+  @include justify-center;
+}
+
+.justify-right {
+  @include justify-right;
+}
+
+.space-between {
+  @include space-between;
+}
+
+.space-around {
+  @include  space-around;
+}
+
+.space-evenly {
+  @include space-evenly;
+}
+
+.direction-column {
+  @include direction-column;
+}
+
+.direction-row-reverse {
+  @include direction-row-reverse;
+}
+
+.items-flex-start {
+  @include items-flex-start;
+}
+
+.items-flex-center {
+  @include items-flex-center;
+}
+
+.items-flex-end {
+  @include items-flex-end;
+}
+
+.flex-wrap {
+  @include flex-wrap;
+}
+
+.flex-nowrap {
+  @include flex-nowrap;
+}
+
+.flex-wrap-reverse {
+  @include flex-wrap-reverse;
+}

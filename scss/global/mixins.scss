@@ -1,0 +1,92 @@
+@mixin d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin justify-left {
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+@mixin justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin justify-right {
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+}
+
+@mixin space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin space-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@mixin space-evenly {
+  -webkit-box-pack:  space-evenly;
+  -ms-flex-pack:  space-evenly;
+  justify-content:  space-evenly;
+}
+
+@mixin direction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin direction-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+@mixin items-flex-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@mixin items-flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin items-flex-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@mixin flex-wrap {
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+}
+
+@mixin flex-nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+@mixin flex-wrap-reverse {
+  -ms-flex-wrap:  wrap-reverse;
+  flex-wrap:  wrap-reverse;
+}
+
+@mixin margin-translate {
+  transform: translate(-50%);
+  margin-left: 50%;
+}
