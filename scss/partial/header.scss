@@ -8,11 +8,28 @@ header {
       font-size: $font-size-h1;
       color: $color-black;
       cursor: pointer;
-      //display: none;
+      display: none;
     }
     .navBar {
+      justify-content: flex-end;
+      display: flex;
       width: 100%;
       li {
+        position: relative;
+        &:before {
+          background: $color-black;
+          position: absolute;
+          transition: 0.5s;
+          opacity: 0;
+          content: '';
+          height: 2px;
+          width: 100%;
+          bottom: -3px;
+          left: 0;
+        }
+        &:hover:before {
+          opacity: 1;
+        }
         &:nth-last-child(1n+1) {
           margin-left: 40px;
         }
@@ -20,29 +37,51 @@ header {
           text-transform: uppercase;
           text-decoration: none;
           color: $color-black;
-          transition: 0.5s;
-          &:hover {
-            font-weight: 600;
-          }
         }
       }
     }
   }
-  .sideBar {
-    border-left: 1px solid $color-black;
+  .mobile-bar {
+    border-right: 1px solid $color-black;
     transition: 0.5s ease-in-out;
     transform: translate(-100%);
-    background: $color-gray2;
+    background: $color-gray1;
     color: $color-black;
     position: absolute;
+    padding: 25px 0;
     display: none;
     height: 100vh;
     z-index: 1000;
     width: 280px;
     left: 0;
     top: 0;
+    li {
+      padding: 15px 5px;
+      transition: 0.5s;
+      &:nth-child(1n+2) {
+        &:hover {
+          background: $color-gray;
+          a {
+            color: $color-white;
+          }
+        }
+      }
+      a {
+        text-transform: uppercase;
+        font-size: $font-size-h2;
+        text-decoration: none;
+        color: $color-black;
+        font-weight: bold;
+      }
+    }
     &.active {
       transform: translate(0);
+    }
+    .icon-cross {
+      position: absolute;
+      cursor: pointer;
+      right: 10px;
+      top: 10px;
     }
   }
 }

@@ -5,6 +5,10 @@
   border-radius: 0;
   transition: 0.5s;
   &:focus {
+    background: $color-white;
+    color: $color-gray;
+  }
+  &:focus-visible {
     outline: none;
   }
 }

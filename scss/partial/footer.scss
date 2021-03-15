@@ -1,0 +1,50 @@
+footer {
+  background: $color-gray1;
+  padding: 50px 0 90px 0;
+  width: 100%;
+  .socialMedia {
+    li {
+      &:nth-last-child(1n+1) {
+        margin-left: 15px;
+      }
+      a {
+        text-decoration: none;
+        i {
+          font-size: $font-size-h2;
+          color: $color-gray5;
+          transition: 0.5s;
+        }
+        .icon-facebook {
+          &:hover {
+            color: $color-facebook;
+          }
+        }
+        .icon-twitter {
+          &:hover {
+            color: $color-twitter;
+          }
+        }
+        .icon-google-plus {
+          &:hover {
+            color: $color-googlePlus;
+          }
+        }
+        .icon-behance {
+          &:hover {
+            color: $color-behance;
+          }
+        }
+        .icon-pinterest {
+          &:hover {
+            color: $color-pinterest;
+          }
+        }
+        .icon-instagram {
+          &:hover {
+            color: $color-instagram;
+          }
+        }
+      }
+    }
+  }
+}
