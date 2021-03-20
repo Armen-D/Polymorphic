@@ -304,19 +304,59 @@ header .mobile-bar .icon-cross {
   top: 10px;
 }
 
+footer {
+  background: #ebebeb;
+  padding: 50px 0 90px 0;
+  width: 100%;
+}
+footer .socialMedia li:nth-last-child(1n+1) {
+  margin-left: 15px;
+}
+footer .socialMedia li a {
+  text-decoration: none;
+}
+footer .socialMedia li a i {
+  font-size: 20px;
+  color: #999999;
+  transition: 0.5s;
+}
+footer .socialMedia li a .icon-facebook:hover {
+  color: #3b5999;
+}
+footer .socialMedia li a .icon-twitter:hover {
+  color: #55acee;
+}
+footer .socialMedia li a .icon-google-plus:hover {
+  color: #dd4b39;
+}
+footer .socialMedia li a .icon-behance:hover {
+  color: #131418;
+}
+footer .socialMedia li a .icon-pinterest:hover {
+  color: #bd081c;
+}
+footer .socialMedia li a .icon-instagram:hover {
+  color: #e4405f;
+}
+
 main {
   background: #f6f6f6;
 }
 main .grid-parent {
   padding: 100px;
 }
+main .grid-parent .grid {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 main .grid-parent .grid figure {
   box-sizing: border-box;
-  max-width: 370px;
+  max-width: 100%;
   margin: 15px;
 }
 main .grid-parent .grid figure img {
-  width: 370px;
+  width: 100%;
 }
 main .grid-parent .grid figure button {
   position: absolute;
@@ -363,44 +403,9 @@ main .load a:hover {
   text-decoration: underline;
 }
 
-footer {
-  background: #ebebeb;
-  padding: 50px 0 90px 0;
-  width: 100%;
-}
-footer .socialMedia li:nth-last-child(1n+1) {
-  margin-left: 15px;
-}
-footer .socialMedia li a {
-  text-decoration: none;
-}
-footer .socialMedia li a i {
-  font-size: 20px;
-  color: #999999;
-  transition: 0.5s;
-}
-footer .socialMedia li a .icon-facebook:hover {
-  color: #3b5999;
-}
-footer .socialMedia li a .icon-twitter:hover {
-  color: #55acee;
-}
-footer .socialMedia li a .icon-google-plus:hover {
-  color: #dd4b39;
-}
-footer .socialMedia li a .icon-behance:hover {
-  color: #131418;
-}
-footer .socialMedia li a .icon-pinterest:hover {
-  color: #bd081c;
-}
-footer .socialMedia li a .icon-instagram:hover {
-  color: #e4405f;
-}
-
 @media screen and (max-width: 815px) {
   header {
-    padding: 45px 60px;
+    padding: 20px 20px;
   }
   header #burger-menu {
     display: block;
@@ -411,11 +416,24 @@ footer .socialMedia li a .icon-instagram:hover {
     display: none;
   }
 }
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1040px) {
   main .grid-parent {
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     display: flex;
+    padding: 20px;
+    width: 100%;
+  }
+  main .grid-parent .grid {
+    width: 100%;
+  }
+  main .grid-parent .grid figure {
+    max-width: 500px;
+  }
+  main .grid-parent .grid figure figcaption .btn {
+    padding: 5px 15px;
+    top: -50px;
   }
 }
 

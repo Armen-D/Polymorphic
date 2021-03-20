@@ -1,9 +1,24 @@
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1040px) {
   main {
     .grid-parent {
+      justify-content: center;
       flex-direction: column;
       align-items: center;
       display: flex;
+      padding: 20px;
+      width: 100%;
+      .grid {
+        width: 100%;
+        figure {
+          max-width: 500px;
+          figcaption {
+            .btn {
+              padding: 5px 15px;
+              top: -50px;
+            }
+          }
+        }
+      }
     }
   }
 }
