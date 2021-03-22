@@ -346,14 +346,23 @@ main .grid-parent {
   padding: 100px;
 }
 main .grid-parent .grid {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
   width: 100%;
   padding: 0;
   margin: 0;
 }
+main .grid-parent .grid:nth-last-child(1n+2) {
+  margin-right: 30px;
+}
 main .grid-parent .grid figure {
   box-sizing: border-box;
   max-width: 100%;
-  margin: 15px;
+}
+main .grid-parent .grid figure:nth-last-child(1n+2) {
+  margin-bottom: 30px;
 }
 main .grid-parent .grid figure img {
   width: 100%;
@@ -427,6 +436,9 @@ main .load a:hover {
   }
   main .grid-parent .grid {
     width: 100%;
+  }
+  main .grid-parent .grid:nth-last-child(1n+2) {
+    margin-right: 0;
   }
   main .grid-parent .grid figure {
     max-width: 500px;

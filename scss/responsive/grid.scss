@@ -9,8 +9,12 @@
       width: 100%;
       .grid {
         width: 100%;
+        &:nth-last-child(1n+2) {
+          margin-right: 0;
+        }
         figure {
           max-width: 500px;
+
           figcaption {
             .btn {
               padding: 5px 15px;
